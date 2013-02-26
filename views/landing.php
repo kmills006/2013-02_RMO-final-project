@@ -1,5 +1,11 @@
-	<section id="galleria">
-		<img src="imgs/les_mes.jpg" alt="Les Misérables Backdrop"/>
-		<img src="imgs/oz.jpg" alt="The Great and Powerful Oz Backdrop"/>
-		<img src="imgs/the_great_gatsby.jpg" alt="The Great Gatsby Backdrop"/>
+
+
+<section class="main-content">
+	<section id="trailer-previews">
+		<section id="galleria">
+			<? foreach($data as $trailer){ var_dump($trailer);?>
+				<img class="lrg-backdrop" src="imgs/<? echo $trailer["backdrop"]?>" alt="<? echo $trailer["movie_title"]?> Backdrop" data-link="?controller=landing&action=details&mid=<? echo $trailer["movie_id"] ?>" />
+			<? } ?>
+		</section>
 	</section>
+</section>
