@@ -25,9 +25,6 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 
-        <!-- Theme -->
-        <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
-
     </head>
 
     <body>

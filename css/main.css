@@ -52,15 +52,12 @@ table {
 }
 
 
-
-/* General Page Styles */
-
-
 /* Navigation Styles */
 header{
 	background-color: rgba(0, 0, 0, .3);
 	position: absolute;
 	width: 100%;
+	z-index: 6;
 }
 
 nav{
@@ -100,4 +97,17 @@ nav ul li a:hover{
 	color: #FFF;
 }
 
+
 /* Content Styles */
+#galleria{
+	width: 100%;
+	height: 740px;
+	position: relative;
+	/*z-index: -2;*/
+}
+
+#galleria img{
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
