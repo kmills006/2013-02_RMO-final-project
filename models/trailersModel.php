@@ -17,8 +17,16 @@
 
 		public function getTrailer($movie_id = ""){
 			$sql = "SELECT *
-					FROM movie_trailers
-					WHERE movie_id = :mid";
+					FROM movie_trailers as mt
+					JOIN video_paths as vp
+					ON mt.movie_id = vp.movie_id
+					WHERE mt.movie_id = :mid";
+
+			/* SELECT *
+			FROM movie_trailers as mt
+			JOIN video_paths as vp
+			ON mt.movie_id = vp.movie_id
+			WHERE mt.movie_id = "512d1051dd813"; */
 
 			$st = $this->dbcon->prepare($sql);
 

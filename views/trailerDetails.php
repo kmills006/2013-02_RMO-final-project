@@ -1,7 +1,10 @@
 
 <section class="main-content details">
 	<section class="full-trailer">
-		<img src="imgs/placeholder_940x450.gif" />
+		<!-- <img src="imgs/placeholder_940x450.gif" /> -->
+		<video controls>
+			<source src="videos/webm/<? echo $data[0]["webM"]; ?>"/>
+		</video>
 	</section>
 
 	<section class="movie-details">
